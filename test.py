@@ -16,3 +16,9 @@ print(a.reshape((3,2))) # flattens, then filled in new form
 w = np.array(random.sample(range(1000), 12)) # flat array with 12 random numbers from 1 to 1000
 w = w.reshape((2, 2, 3)) # 3 dimential matrix 2x3x3
 print(w)
+
+X = np.array([[1, 60],[1, 50], [1, 75]])
+y = np.array([10, 7, 12]).T
+B = np.linalg.inv(X.T.dot(X)).dot(X.T).dot(y)
+print("Coefficients:")
+print(B)
