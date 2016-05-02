@@ -22,3 +22,7 @@ y = np.array([10, 7, 12]).T
 B = np.linalg.inv(X.T.dot(X)).dot(X.T).dot(y)
 print("Coefficients:")
 print(B)
+
+X = np.array([[1, 0, 1, 1]]).T
+W = np.array([[-5, -1, 5, 0]]).T
+print(W.T.dot(X))
